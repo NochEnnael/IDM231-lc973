@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Disney Zodiac</title>
+    <link rel="stylesheet" href="zodiac.css">
+    <script type="text/javascript" src="zodiacjava.js"></script>
+</head>
+<body>
+    
+    <div class="header">
+        <header>Find Your Disney Symbol</header>
+    </div>
+
+    <div class="right-container">
+
+        <div class="zodiac_elements">
+
+            <div id="intro-item">
+
+                <h2>Who are you?</h2>
+    
+                <p id="intropara">
+                    When you wish upon a star, do you ever wish on what Disney Character you are? What is on your path? Look no further, unless your heart desires. Find your zodiac Disney Symbol and you'll learn what's in store for you. Do you have the strength of Maleficent or the bravery of Ariel? 
+                </p>
+            </div>
+
+            <div id="aquarius" hidden>
+
+                <h2>You are Ariel!</h2>
+
+                <p id= "paraAriel" >
+                You love exploring new places that show great signs of danger. You show no fear and are willing to try new things. You capture everyone's attention with your stunning personality and your swiftness whenever a storm is brewing.
+                </p>
+             </div>
+    
+             <div id="pisces" hidden>
+
+                <h2>You are the Incredibles!</h2>
+
+                <p id="paraInc">
+                    You want to do evrything in your power to fix everything. You are a hero in the eyes of all your loved ones. You stand up for whats right and what your believe in. Your pick your fights wisely, and have the best strategy in the game. 
+                </p>
+            </div>
+    
+            <div id="aries" hidden>
+
+                <h2>You are Mike Wasowski!</h2>
+
+                <p id="paraMike">
+                    Your friends would be nothing if they didn't have you. You always got your friends' back during the good and the bad. When the going gets tough, you have to toughen up yourself and push through with your best friend.
+                </p>
+            </div>
+        
+            <div id="taurus" hidden>
+
+                <h2>You are the Poisonous Apple!</h2>
+
+                <p id="paraApple">
+                    You aren't what others perseive you as on the outside. You have a personality that has a kick in it and unexpected. When first approached, you first seem safe, but when people get to know you, you have a wild side that helps others bring create a new beginning. 
+                </p>
+            </div>
+    
+            <div id="gemini" hidden>
+
+                <h2>You are Peter!</h2>
+
+                <p id="paraPeter">
+                    Faith, Trust, and Pixie Dust. You seek adventure and love danger. Nothing can touch you and you can make all the bad go away with a snap of a finger! You hve ambition and believe in everyone around you. 
+                </p>
+            </div>
+    
+            <div id="cancer" hidden>
+
+                <h2>You are the Magic Mirror!</h2>
+
+                <p id="paraMirror">
+                    You see and know all, doesn't mean that it's a bad thing. Filled with knowledge: can be useful or not, but you don't do so to hurt others. You look over others to bring protection. 
+                </p>
+            </div>
+    
+            <div id="leo" hidden>
+
+                <h2>You are Maleficent!</h2>
+
+                <p id="paraMal">
+                    You are super ambitious and know what you want. If someone does your wrong, you never let it go and try to make it right. You don't need anyone to push you around, you are your own person. Your leadership is hard to come by. Stay strong and powerful.
+                </p>
+            </div>
+        
+            <div id="virgo" hidden>
+
+                <h2>You are the Toy Story Clouds!</h2>
+
+                <p id="paraToy">
+                    You go with the flow and you are happy. You got a friend with everyone you meet. The second someone sits next to you, you become best friends as if you were kids. Life might have its messy winds, but you will always be there. 
+                </p>
+            </div>
+    
+            <div id="libra" hidden>
+
+                <h2>You are Tiana's Lilypad!</h2>
+
+                <p id="paraTiana">
+                    You are almost there and you never give up on what you put your mine to. Ambitious and corageous even at the darkest moments in life. Don't give up on yourself, beacuse that wish will come true. 
+                </p>
+            </div>
+    
+            <div id="scorpio" hidden>
+
+                <h2>You are Belle's rose!</h2>
+
+                <p id="paraRose">
+                    You are delicate and sensitive at times, but you also have the stregth and potential to make others grow to their best selves. Your expansive knowledge on everything is amazing, and might be a bit of a book nerd?
+                </p>
+            </div>
+                
+            <div id="sagittarius" hidden>
+
+                <h2>You are Rapunzel's sun!</h2>
+
+                <p id="paraSun">
+                    You light up everyone's world with your happiness. The rays of happiness that eminate from your personality spread to others. What you are near, everyone finds joy in your twinkle. You seek adventure wherevrever your turn, wanting to learn about the unknown throught your optimism. 
+                </p>
+            </div>
+    
+            <div id="capricorn" hidden>
+
+                <h2>You are the UP balloons!</h2>
+                
+                <p id="paraUp">
+                    You would do anything for those closest to you. You share the same dreams and find out the best ways to pursue them. Nothing will stop your from pursing your dreams. No obstacle, no person. Fly, and seek your adventure. 
+                </p>
+            </div>
+
+        </div>
+
+    
+
+        <div class="submit-buttons">
+
+            <p class="birthdaypara">Enter Birthday</p>
+
+
+            <div class="month_button">
+                <p class="month">Month</p>
+            </div>
+            
+            <div class="day_button">
+                <p>Day</p>
+            </div>
+        
+            <div class="year_button">
+                <p>Year</p>
+            </div>
+        
+            <div class="enter_button">
+                <div class="restart_button">
+                    <p>RESTART</p>
+                </div>
+
+                <!-- Trigger/Open The Modal -->
+                <div class="start_button">
+                    <button id="start_button">
+                        <p>START MAGIC</p>
+                    </button>
+                </div>
+            </div>    
+
+        </div>
+    
+    </div>    
+
+
+    
+    <!--HTML FOR THE GRID -->
+
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <img src="../graphics/ariel.jpg" alt="Ariel" id="ariel">
+        </div >
+
+        <div class="grid-item">
+            <img src="../graphics/incredibles.jpg" alt="Incredibles logo" id="incred">
+        </div>
+        
+        <div class="grid-item">
+            <img src="../graphics/mike.jpg" alt="Mike's Eye" id="mike">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/snowwhite.jpg" alt="Snow's Apple" id="apple">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/peterpan.jpg" alt="Peter's Hat" id="peter">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/mirror.jpg" alt="Magic Mirror" id="mirror">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/mal.jpg" alt="Maleficent" id="mal">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/toystory.jpg" alt="Toystory Clounds" id="toy">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/tiana.jpg" alt="Tiana's Lilypad" id="tiana">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/belle.jpg" alt="Belle's Flower" id="belle">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/tangled.jpg" alt="Rapunzel's Sun" id="tangled">
+        </div>
+
+        <div class="grid-item">
+            <img src="../graphics/up.jpg" alt="Up" id="up">
+        </div>
+        
+    </div>
+
+    
+
+
+</body>
+</html>
+
