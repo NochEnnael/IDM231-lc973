@@ -36,7 +36,6 @@ const capricorn = document.getElementById('capricorn')
 
 //all of these are for the images to click onto!!!
 
-const head = document.getElementById('header')
 const ariel = document.getElementById('ariel')
 const incred = document.getElementById('incred')
 const mike = document.getElementById('mike')
@@ -49,7 +48,6 @@ const tiana = document.getElementById('tiana')
 const belle = document.getElementById('belle')
 const tangled = document.getElementById('tangled')
 const up = document.getElementById('up')
-
 
 
   function changeText(para){
@@ -422,9 +420,22 @@ const up = document.getElementById('up')
 
 
 
-function clickZodiac() {
-  // click onto the desired zodiac and have the rest of the icons have a high opacity so the viewer knows which one they chose
-}
+
+  const soundButtons = document.querySelectorAll('.soundtrack');
+  
+  const speakers = document.getElementById('speakers');
+  
+  soundButtons.forEach(button  => {
+      const sound = button.dataset.sound;
+      button.addEventListener(`click`, () => {
+          speakers.src = `/audio/${sound}.mp3`;
+          speakers.onplay();
+      })
+  
+  });
+
+
+
 
 
 function playSound() {
@@ -437,10 +448,6 @@ function clickSubmit() {
 
 function clickRestart(){
     //click button to restart everything
-}
-
-function clickClose() {
-    // click button to close the Modal out
 }
 
 
@@ -460,12 +467,45 @@ function clickYear() {
 
 
 
-/* if (condition) {
-    // if the icon is picked, open modal
-  } else {
-    //  don't open up any other of the modals and only show the modal fo rth eicon picked 
-    
-  }
- */
+
+
+
+
+
+
+
+//IF STATEMENT FOR THE LOOP!!!   IF STATEMENT FOR THE LOOP!!!
+
+
+
+
+if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
+  AstroSign = "capricorn";
+} else if ((whichMonth == 11 && whichDayOfMonth >= 22) || (whichMonth == 12 && whichDayOfMonth <= 21)) {
+  AstroSign = "sagittarius";
+} else if ((whichMonth == 10 && whichDayOfMonth >= 24) || (whichMonth == 11 && whichDayOfMonth <= 21)) {
+  AstroSign = "scorpio";
+} else if ((whichMonth == 9 && whichDayOfMonth >= 23) || (whichMonth == 10 && whichDayOfMonth <= 23)) {
+  AstroSign = "libra";
+} else if ((whichMonth == 8 && whichDayOfMonth >= 23) || (whichMonth == 9 && whichDayOfMonth <= 22)) {
+  AstroSign = "virgo";
+} else if ((whichMonth == 7 && whichDayOfMonth >= 23) || (whichMonth == 8 && whichDayOfMonth <= 22)) {
+  AstroSign = "leo";
+} else if ((whichMonth == 6 && whichDayOfMonth >= 22) || (whichMonth == 7 && whichDayOfMonth <= 22)) {
+  AstroSign = "cancer";
+} else if ((whichMonth == 5 && whichDayOfMonth >= 21) || (whichMonth == 6 && whichDayOfMonth <= 21)) {
+  AstroSign = "gemini";
+} else if ((whichMonth == 4 && whichDayOfMonth >= 20) || (whichMonth == 5 && whichDayOfMonth <= 20)) {
+  AstroSign = "taurus";
+} else if ((whichMonth == 3 && whichDayOfMonth >= 21) || (whichMonth == 4 && whichDayOfMonth <= 19)) {
+  AstroSign = "aries";
+} else if ((whichMonth == 2 && whichDayOfMonth >= 19) || (whichMonth == 3 && whichDayOfMonth <= 20)) {
+  AstroSign = "pisces";
+} else if ((whichMonth == 1 && whichDayOfMonth >= 20) || (whichMonth == 2 && whichDayOfMonth <= 18)) {
+  AstroSign = "aquarius";
+}
+
+
+
 
 }); 
