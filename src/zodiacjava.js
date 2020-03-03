@@ -425,15 +425,14 @@ const up = document.getElementById('up')
   
   const speakers = document.getElementById('speakers');
   
-  soundButtons.forEach(button  => {
+  soundButtons.forEach(button => {
       const sound = button.dataset.sound;
-      button.addEventListener(`click`, () => {
-          speakers.src = `/audio/${sound}.mp3`;
-          speakers.onplay();
+      button.addEventListener('click', () => {
+          speakers.src = `audio/${sound}.mp3`;
+          speakers.play();
       })
   
-  });
-
+  })
 
 
 
