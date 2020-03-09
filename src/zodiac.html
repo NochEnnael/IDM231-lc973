@@ -27,7 +27,7 @@
 
         <div class="zodiac_elements">
 
-            <div id="intro-item">
+            <div id="intro-item" class="description">
 
                 <h2>Who are you?</h2>
     
@@ -36,7 +36,7 @@
                 </p>
             </div>
 
-            <div id="aquarius" hidden>
+            <div id="aquarius" hidden class="description">
             
 
                 <h2>You are Ariel!</h2>
@@ -46,7 +46,7 @@
                 </p>
              </div>
     
-             <div id="pisces" hidden>
+             <div id="pisces" hidden class="description">
 
                 <h2>You are the Incredibles!</h2>
 
@@ -55,7 +55,7 @@
                 </p>
             </div>
     
-            <div id="aries" hidden>
+            <div id="aries" hidden class="description">
 
                 <h2>You are Mike Wasowski!</h2>
 
@@ -64,7 +64,7 @@
                 </p>
             </div>
         
-            <div id="taurus" hidden>
+            <div id="taurus" hidden class="description">
 
                 <h2>You are the Poisonous Apple!</h2>
 
@@ -73,7 +73,7 @@
                 </p>
             </div>
     
-            <div id="gemini" hidden>
+            <div id="gemini" hidden class="description">
 
                 <h2>You are Peter!</h2>
 
@@ -82,7 +82,7 @@
                 </p>
             </div>
     
-            <div id="cancer" hidden>
+            <div id="cancer" hidden class="description">
 
                 <h2>You are the Magic Mirror!</h2>
 
@@ -91,7 +91,7 @@
                 </p>
             </div>
     
-            <div id="leo" hidden>
+            <div id="leo" hidden class="description">
 
                 <h2>You are Maleficent!</h2>
 
@@ -100,7 +100,7 @@
                 </p>
             </div>
         
-            <div id="virgo" hidden>
+            <div id="virgo" hidden class="description">
 
                 <h2>You are the Toy Story Clouds!</h2>
 
@@ -109,7 +109,7 @@
                 </p>
             </div>
     
-            <div id="libra" hidden>
+            <div id="libra" hidden class="description">
 
                 <h2>You are Tiana's Lilypad!</h2>
 
@@ -118,7 +118,7 @@
                 </p>
             </div>
     
-            <div id="scorpio" hidden>
+            <div id="scorpio" hidden class="description">
 
                 <h2>You are Belle's rose!</h2>
 
@@ -127,7 +127,7 @@
                 </p>
             </div>
                 
-            <div id="sagittarius" hidden>
+            <div id="sagittarius" hidden class="description">
 
                 <h2>You are Rapunzel's sun!</h2>
 
@@ -136,7 +136,7 @@
                 </p>
             </div>
     
-            <div id="capricorn" hidden>
+            <div id="capricorn" hidden class="description">
 
                 <h2>You are the UP balloons!</h2>
                 
@@ -150,25 +150,84 @@
     
 
         <div class="submit-buttons">
-
+            <form id="month" name= "bdaymonth" onsubmit="return false;">
             <p class="birthdaypara">Enter Birthday</p>
 
 
-            <div class="month_button">
+            <div class="month_button" id="monthdrop">
+               
+                <select id="choosemonth">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                    
+                </select>
+              
                 <p class="month">Month</p>
+
             </div>
             
-            <div class="day_button">
+            <div class="day_button" id="daydrop">
+
+                
+
+                    <select id="chooseday">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+
+                     </select>
+
                 <p>Day</p>
             </div>
         
-            <div class="year_button">
+            <!-- <div class="year_button">
                 <p>Year</p>
-            </div>
+            </div> -->
         
             <div class="enter_button">
                 <div class="restart_button">
-                    <p>RESTART</p>
+                    <button id="restart">
+                        <p>RESTART</p>
+                    </button>
+                    
                 </div>
 
                 <!-- Trigger/Open The Modal -->
@@ -179,7 +238,7 @@
                 </div>
 
             </div>    
-
+            </form>
         </div>
     
     </div>    
@@ -191,30 +250,30 @@
     <div class="grid-container">
 
         <input type="image" src="../graphics/ariel.jpg" id="ariel" class="soundtrack" data-sound="arielsound">
-        
+
         <audio id="speakers"></audio> 
         
-        <input type="image" src="../graphics/incredibles.jpg" id="incred">
+        <input type="image" src="../graphics/incredibles.jpg" id="incred" class="soundtrack" data-sound= "incrediblessound">
     
-        <input type="image" src="../graphics/mike.jpg" id="mike">
+        <input type="image" src="../graphics/mike.jpg" id="mike" class="soundtrack" data-sound= "mikesound">
 
-        <input type="image" src="../graphics/snowwhite.jpg" id="apple">
+        <input type="image" src="../graphics/snowwhite.jpg" id="apple" class="soundtrack" data-sound="snowsound">
 
-        <input type="image" src="../graphics/peterpan.jpg" id="peter">
+        <input type="image" src="../graphics/peterpan.jpg" id="peter" class="soundtrack" data-sound="pansound">
   
-        <input type="image" src="../graphics/mirror.jpg" id="mirror">
+        <input type="image" src="../graphics/mirror.jpg" id="mirror" class="soundtrack" data-sound="mirrorsound">
         
-        <input type="image" src="../graphics/mal.jpg" id="mal">
+        <input type="image" src="../graphics/mal.jpg" id="mal" class="soundtrack" data-sound="malsound">
 
-        <input type="image" src="../graphics/toystory.jpg" id="toy">
+        <input type="image" src="../graphics/toystory.jpg" id="toy" class="soundtrack" data-sound="toystorysound">
 
-        <input type="image" src="../graphics/tiana.jpg" id="tiana">
+        <input type="image" src="../graphics/tiana.jpg" id="tiana" class="soundtrack" data-sound="tianasound">
         
-        <input type="image" src="../graphics/belle.jpg" id="belle">
+        <input type="image" src="../graphics/belle.jpg" id="belle" class="soundtrack" data-sound="bellesound">
 
-        <input type="image" src="../graphics/tangled.jpg" id="tangled">
+        <input type="image" src="../graphics/tangled.jpg" id="tangled" class="soundtrack" data-sound="tangledsound">
 
-        <input type="image" src="../graphics/up.jpg" id="up">
+        <input type="image" src="../graphics/up.jpg" id="up" class="soundtrack" data-sound="up">
         <!-- <div class="grid-item">
             <img src="../graphics/mike.jpg" alt="Mike's Eye" id="mike">
         </div>
