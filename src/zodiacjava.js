@@ -10,10 +10,8 @@ const month = document.getElementsByClassName('month_button')
 //birthmonth
 const year = document.getElementsByClassName('year_button')
 //birthyear
-const start = document.getElementsByClassName('start_button') 
+
 //submit the dates and find out what zodiac is 
-const restart = document.getElementsByClassName('restart_button')
-// restart and bring back to beginning text 
 
 
 
@@ -483,26 +481,33 @@ function clickYear() {
 }
 
 
+const restart = document.getElementByID('restart_button')
+// restart and bring back to beginning text 
+restart.addEventListener('click', function(){
+  
+});
 
 
 
+const submit = document.getElementById('start_button') 
 
-
-
-
-
-
-let whichMonth = document.getElementById('choosemonth').value//select element for month
-let whichDayOfMonth = document.getElementById('chooseday').value//select element for day
-
-const submit = document.getElementById('month');//form
+/* const submit = document.getElementById('month'); *///form
 
 //IF STATEMENT FOR THE LOOP!!!   IF STATEMENT FOR THE LOOP!!!
 
 
 
-submit.addEventListener('submit', function(){ //calls this function when submitting the form
-if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
+submit.addEventListener('click', function(){ //calls this function when submitting the form
+
+const whichMonth = document.getElementById('choosemonth').value//select element for month
+const whichDayOfMonth = document.getElementById('chooseday').value//select element for day
+
+/* console.log('hello');
+ */
+console.log('which month is ' + whichMonth);
+console.log('which day of month is ' + whichDayOfMonth);
+
+ if ((whichMonth == 12 && whichDayOfMonth >= 22) || (whichMonth == 1 && whichDayOfMonth <= 19)) {
   AstroSign = "capricorn";
   changeText(capricorn);
   changeOpacity(up);
