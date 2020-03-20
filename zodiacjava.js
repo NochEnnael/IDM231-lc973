@@ -252,46 +252,6 @@ console.log('which day of month is ' + whichDayOfMonth);
 
 });
 
-/* submit.addEventListener("submit", function(){
-  if (AstroSign == "capricorn") {
-    changeText(capricorn);
-    changeOpacity(up);
-  } else if (AstroSign == "sagittarius") {
-    changeText(sagittarius);
-    changeOpacity(tangled);
-  } else if (AstroSign == "scorpio") {
-    changeText(scorpio);
-    changeOpacity(belle);
-  } else if (AstroSign == "libra") {
-    changeText(libra);
-    changeOpacity(tiana);
-  } else if (AstroSign == "virgo") {
-    changeText(virgo);
-    changeOpacity(toy);
-  } else if (AstroSign == "leo") {
-    changeText(leo);
-    changeOpacity(mal);
-  } else if (AstroSign == "cancer") {
-    changeText(cancer);
-    changeOpacity(mirror);
-  } else if (AstroSign == "gemini") {
-    changeText(gemini);
-    changeOpacity(peter);
-  } else if (AstroSign == "taurus") {
-    changeText(taurus);
-    changeOpacity(apple);
-  } else if (AstroSign == "aries") {
-    changeText(aries);
-    changeOpacity(mike);
-  } else if (AstroSign == "pisces") {
-    changeText(pisces);
-    changeOpacity(incred);
-  } else if (AstroSign == "aquarius") {
-    changeText(aquarius);
-    changeOpacity(ariel);
-  }
-}); */
-
 
 
 }); 
